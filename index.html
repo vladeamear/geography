@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="questions" class="none-active">
+        <h2>Практическая работа</h2>
+        <div class="question-wrapper">
+            <p class="question">1. Называем горы. Находим их на карте и определяем, на каком материке, в какой его части и в какой стране они находятся</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="question-wrapper">
+            <p class="question">2. Определяем, в каком направлении и на сколько километров протянулись горы. как расположены горы относительно сторон горизонта, географических объектов (равнин, рек, морей).</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="question-wrapper">
+            <p class="question">3. Определяем по шкале высот в легенде карты, какова средняя абсолютная высота гор. Называем их наивысшую точку.</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="question-wrapper">
+            <p class="question">4. Определяем высоту и географические координаты наивысшей точки. По шкале высот. направлению течения рек установим, в каком направлении происходит понижение рельефа.</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="question-wrapper">
+            <p class="question">5. Определяем, какие реки берут начало в горах, если ли крупные озёра.</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="btn-wrapper">
+            <button id="send" class="btn-send">Отправить</button>
+        </div>
+    </div>
+
+    <div id="rate-yourself" class="none-active">
+        <h2>Молодец!</h2>
+        <p style="text-align: center;">
+            <img src="./src/dancing.png">
+        </p>
+        <p>Оцени себя:</p>
+        <div>
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="level-1" name="level" value="I">
+                <label for="level-1">I уровень</label>
+            </div>
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="level-2" name="level" value="II">
+                <label for="level-2">II уровень</label>
+            </div>
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="level-3" name="level" value="III">
+                <label for="level-3">III уровень</label>
+            </div>
+        </div>
+        <div class="question-wrapper">
+            <p class="question">Если что-то было не понятно, напиши:</p>
+            <textarea class="answer"></textarea>
+        </div>
+        <div class="btn-wrapper">
+            <button id="share" class="btn-send">Поделиться</button>
+        </div>
+    </div>
+
+    <div id="finish" class="none-active">
+        <div class="vertical-align">
+            <h2>Спасибо за ответы!</h2>
+            <p style="text-align: center;">
+                <img src="./src/climbing.png">
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
