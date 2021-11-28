@@ -22,7 +22,15 @@ img{
     max-width: 400px;
     width: 100%;
 }
-
+.round-corners{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.regular-paragraph{
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .btn-send{
     background-color: #ff641a;
     color: #fff;
