@@ -1,9 +1,22 @@
+function sendEmail() {
+    var tempParams = {
+        name: document.getElementById('name').value,
+        question_1: document.getElementById('question_1').value,
+        question_2: document.getElementById('question_2').value,
+        question_3: document.getElementById('question_3').value,
+        question_4: document.getElementById('question_4').value,
+        question_5: document.getElementById('question_5').value,
+        level: document.querySelector('input[name="level"]:checked').value,
+        didnt_understand: document.getElementById('didnt_understand').value,
+    }
+    emailjs.send('gmail','geography_test', tempParams)
+}
+
 let questions = document.getElementById('questions'),
     rateYourself = document.getElementById('rate-yourself'),
     finish = document.getElementById('finish');
 
 let page = localStorage.getItem('page');
-console.log(page);
 switch (page) {
     case null:
         questions.classList.remove('none-active');
@@ -32,4 +45,6 @@ document.getElementById('share').addEventListener('click', () => {
     finish.classList.remove('none-active');
     finish.classList.add('active');
     localStorage.setItem('page', 'finish');
+    sendEmail();
 })
+

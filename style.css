@@ -66,6 +66,7 @@ img{
 .question{
     margin-bottom: 5px;
 }
+
 .answer{
     font-size: 20px;
     box-sizing: border-box;
@@ -80,6 +81,10 @@ img{
     outline: none !important;
     border-radius: 0;
     border: 2px solid #ff641a;
+}
+
+input.answer {
+    height: 2em;
 }
 
 .custom-radio {
