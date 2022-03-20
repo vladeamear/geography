@@ -33,11 +33,17 @@ switch (page) {
 }
 
 document.getElementById('send').addEventListener('click', () => {
-    questions.classList.remove('active');
-    questions.classList.add('none-active')
-    rateYourself.classList.remove('none-active');
-    rateYourself.classList.add('active');
-    localStorage.setItem('page', 'rateYourself');
+    let name = document.getElementById('name');
+    if (name.value) {
+        questions.classList.remove('active');
+        questions.classList.add('none-active')
+        rateYourself.classList.remove('none-active');
+        rateYourself.classList.add('active');
+        localStorage.setItem('page', 'rateYourself');
+    } else {
+        alert('Введите ФИО')
+        name.classList.add('error')
+    }
 })
 document.getElementById('share').addEventListener('click', () => {
     rateYourself.classList.remove('active');

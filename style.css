@@ -123,3 +123,7 @@ input.answer {
 .radio {
     margin-bottom: 0.4em;
 }
+
+.error {
+    border-color: #ff641a;
+}
